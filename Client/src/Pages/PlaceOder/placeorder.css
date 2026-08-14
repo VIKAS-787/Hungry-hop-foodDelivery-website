@@ -1,0 +1,118 @@
+/* PAGE WRAPPER */
+.order-place {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f7f7;
+}
+
+/* LEFT FORM CARD */
+.order-place-left {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.order-place-left .title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* INPUT STYLE */
+.order-place-left input {
+    width: 100%;
+    padding: 14px 12px;
+    margin-bottom: 14px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.25s;
+    background: #fafafa;
+}
+
+.order-place-left input:focus {
+    border-color: #ff4d4d;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.15);
+}
+
+/* RIGHT SUMMARY CARD */
+.order-place-right {
+    width: 340px;
+    background: linear-gradient(180deg, #ffffff, #fafafa);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+/* TOTAL TITLE */
+.order-place-right h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* BUTTON */
+.order-place-right button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff4d4d, #ff2e2e);
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.order-place-right button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(255, 77, 77, 0.3);
+}
+
+.order-place-right p {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 1050px) {
+    .order-place {
+        gap: 25px;
+    }
+
+    .order-place-right {
+        width: 320px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .order-place {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-place-left,
+    .order-place-right {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .order-place-right {
+        position: static;
+    }
+}

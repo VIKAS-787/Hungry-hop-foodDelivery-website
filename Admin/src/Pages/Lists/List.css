@@ -1,0 +1,121 @@
+.add-list {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left:50px;
+} 
+
+.add-list h2 {
+     margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+.list-table-format.title {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.list-table-format {
+    display: grid;
+    grid-template-columns: 80px 2fr 1.5fr 1fr 80px;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 14px;
+}
+
+.list-table-format:hover {
+    background-color: #fafafa;
+}
+
+.list-table-format img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.list-table-format img:last-child {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.list-table-format img:last-child:hover {
+    transform: scale(1.2);
+}
+
+/* FOR RESPONSIVNESS WE ADD MEDIA QUERY */
+@media (max-width: 1050px) {
+    .add-list {
+        width: 90%;
+    }
+
+    .list-table-format {
+        grid-template-columns: 70px 2fr 1.5fr 1fr 60px;
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .list-table-format img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 900px) {
+    .list-table-format {
+        grid-template-columns: 60px 2fr 1.2fr 1fr 50px;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .list-table-format img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .add-list h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .add-list {
+        width: 95%;
+    }
+
+    .list-table-format {
+        grid-template-columns: 60px 2fr 1fr 50px;
+    }
+
+    .list-table-format p:nth-child(3),
+    .list-table-format.title b:nth-child(3) {
+        display: none;
+    }
+
+    .list-table-format img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .list-table-format {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .add-list h2 {
+        font-size: 16px;
+    }
+}

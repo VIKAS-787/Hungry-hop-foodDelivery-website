@@ -1,0 +1,132 @@
+/* PAGE WRAPPER */
+.my-orders {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f7f7;
+}
+
+/* TITLE */
+.my-orders h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+/* CONTAINER GRID */
+.my-orders .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ORDER CARD */
+.my-orders-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background: #fff;
+    padding: 18px 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.my-orders-order:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.my-orders-order img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* TEXT BLOCKS */
+.my-orders-order p {
+    margin: 0;
+    font-size: 14px;
+    color: #444;
+    flex: 1;
+}
+
+/* PRICE */
+.my-orders-order p:nth-child(3) {
+    font-weight: 600;
+    color: #000;
+}
+
+/* STATUS */
+.my-orders-order span {
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.my-orders-order b {
+    font-size: 14px;
+}
+
+/* BUTTON */
+.my-orders-order button {
+    padding: 10px 16px;
+    border: none;
+    background: linear-gradient(135deg, #ff4d4d, #ff2e2e);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.my-orders-order button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 77, 77, 0.3);
+}
+
+/* ===================== */
+/* 🔥 RESPONSIVE 950px */
+/* ===================== */
+@media (max-width: 950px) {
+    .my-orders-order {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .my-orders-order img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .my-orders-order p {
+        width: 100%;
+    }
+
+    .my-orders-order button {
+        width: 100%;
+    }
+}
+
+/* ===================== */
+/* 🔥 SMALL MOBILE 600px */
+/* ===================== */
+@media (max-width: 600px) {
+    .my-orders {
+        padding: 20px 10px;
+    }
+
+    .my-orders h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .my-orders-order {
+        padding: 15px;
+    }
+}

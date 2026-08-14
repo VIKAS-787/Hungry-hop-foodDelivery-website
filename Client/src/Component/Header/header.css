@@ -1,0 +1,132 @@
+.header {
+  height: 65vh;
+  margin: 20px auto;
+  background: url("./header_img.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 50%;
+  bottom: 16%;
+  left: 6vw;
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+  z-index: 1;
+}
+.header-contents h2 {
+  font-weight: 600;
+  font-size: clamp(24px, 4vw, 48px);
+  line-height: 1.2;
+}
+
+.header-contents p {
+  font-size: clamp(14px, 1.1vw, 18px);
+  color: #f1f1f1;
+}
+
+.header-contents button {
+  color: #49557e;
+  font-weight: 500;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 30px;
+  font-size: clamp(13px, 1vw, 16px);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header-contents button:hover {
+  color: tomato;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(255, 99, 71, 0.4);
+}
+.header-contents button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 60vh;
+  }
+
+  .header-contents {
+    max-width: 60%;
+    gap: 15px;
+    bottom: 14%;
+  }
+
+  .header-contents h2 {
+    font-size: clamp(22px, 3.5vw, 40px);
+  }
+
+  .header-contents p {
+    font-size: 14px;
+  }
+
+  .header-contents button {
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    height: 55vh;
+  }
+
+  .header-contents {
+    max-width: 70%;
+    left: 5vw;
+    bottom: 12%;
+    gap: 12px;
+  }
+
+  .header-contents h2 {
+    font-size: clamp(20px, 3vw, 34px);
+  }
+
+  .header-contents p {
+    font-size: 13px;
+  }
+
+  .header-contents button {
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    height: 50vh;
+    margin: 15px 10px;
+  }
+
+  .header-contents {
+    position: static;
+    max-width: 100%;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  .header-contents h2 {
+    font-size: 22px;
+  }
+
+  .header-contents p {
+    font-size: 13px;
+  }
+
+  .header-contents button {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+}
