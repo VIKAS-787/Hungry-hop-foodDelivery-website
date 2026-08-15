@@ -15,7 +15,7 @@ import menu_8 from "./menu_8.png";
 import logo from './logo.png';
 import search_icon from './search_icon.png';
 import basket_icon from './basket_icon.png';
-import rating_starts from "./rating_starts.png";
+import rating_starts from "./rating_Starts.png";
 import Add_icon from "./Add_icon.png";
 import Green_icon from "./Green_icon.png";
 import Remove_icon from "./Remove_icon.png";
@@ -25,7 +25,7 @@ import Twitter_icon from "./Twitter_icon.png";
 import Facebook_icon from "./Facebook_icon.png";
 import AppStore_icon from "./App_store.png";
 import GooglePlay_icon from "./Google_icon.png";
-import Cross_icon from "./cross_icon.png";
+import Cross_icon from "./Cross_icon.png";
 import Profile_icon from "./profile_icon.png"
 import Bag_icon from "./bag_icon.png"
 import Logout_icon from "./logout_icon.png"
