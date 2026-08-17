@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 const StoreContext = createContext(null);
 
 const ContextProvider = ({ children }) => {
-const Url = "http://localhost:5001";
+const Url = " https://hungry-hop-fooddelivery.onrender.com";
 
   const [cartItem, setCartItem] = useState({});
   const [food_list, setFoodList] = useState([]);
